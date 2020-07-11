@@ -1,0 +1,4 @@
+<?php
+$this->load->model("user/user_group");
+$this->model_user_user_group->addPermission($this->user->getGroupId(), "access", "extension/module/url_alias_editor");
+$this->model_user_user_group->addPermission($this->user->getGroupId(), "modify", "extension/module/url_alias_editor");
